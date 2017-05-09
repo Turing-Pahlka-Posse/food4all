@@ -4,7 +4,7 @@
 
 #### Iteration 0: Map the Food Stores in Denver
   - [x] B.E.: create restful API from [this data](https://www.denvergov.org/opendata/dataset/city-and-county-of-denver-food-stores)
-  F.E.: create Map Interface using MapBox and leaflet
+  - [ ] F.E.: create Map Interface using MapBox and leaflet
 
 #### Iteration 1: Overlay community assets
 
