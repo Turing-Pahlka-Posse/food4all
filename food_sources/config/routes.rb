@@ -4,7 +4,7 @@ Rails.application.routes.draw do
       namespace :stores do
         get '/find', to: 'find_stores#index'
       end
-      resources :stores
+      resources :stores, only: [:index, :show]
       resources :store_types
     end
   end
