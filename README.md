@@ -15,4 +15,9 @@
 - [ ] find data for community assets
 - [ ] build out endpoints : all stores, search by store type, zip-code (sliding radius), healthy corner store initiative, name of store  
 
- 
+
+##### Endpoint Documentation
+
+`/api/v1/store_types` returns a list of all store types
+
+`/api/v1/stores/find?type=STORE_TYPE` returns all stores matching that store type
