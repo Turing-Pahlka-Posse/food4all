@@ -1,6 +1,7 @@
 import React from 'react'
+import './StoreCard.css'
 
-export const StoreCard = ({name, address,  }) => {
+export const StoreCard = ({name, address, phone, neighborhood}) => {
   return(
     <div className="store card">
       <h2 className="name-field">{name}</h2>
