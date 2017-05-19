@@ -17,4 +17,19 @@ RSpec.describe "Stores API" do
     expect(stores.count).to eq(3)
     expect(response.status).to eq(200)
   end
+
+  it 'displays stores filtered by type' do
+    types = create_list(:store_type, 4)
+    store = create(:store)
+    types.first.stores << store
+
+    get "/api/v1/stores/find?type=#{types.first.name}"
+
+    stores = JSON.parse(response.body)
+
+    expect(response).to be_success
+    expect(response.status).to eq(200)
+    expect(stores.count).to eq(1)
+    expect(stores.first["name"]).to eq(store.name)
+  end
 end

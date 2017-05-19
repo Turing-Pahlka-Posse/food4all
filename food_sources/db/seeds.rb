@@ -1,7 +1,7 @@
 require 'csv'
 
 CSV.foreach('db/data/food_stores.csv', headers: true, header_converters: :symbol) do |row|
-  type = StoreType.find_or_create_by(name: row[:store_type])
+  type = StoreType.find_or_create_by(name: row[:store_type].downcase)
   type.stores.create(
   name: row[:store_name],
   address_line1: row[:address_line1],

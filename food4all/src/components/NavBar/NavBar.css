@@ -1,0 +1,68 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #4A4A4A;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  color: #BDBDBD;
+  font-family: 'Avenir Next', sans-serif;
+}
+
+.title {
+  flex: 10;
+  margin: 0;
+  font-size: 32px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.title-highlight {
+  color: #009688;
+  font-weight: bold;
+}
+
+.top-nav-link {
+  margin-left: 15px;
+  color: #BDBDBD;
+  text-decoration: none;
+}
+.top-nav-link:hover {
+  color: #04C2B0;
+}
+
+.active-link {
+  color: #FFF;
+}
+.active-link:hover {
+  color: #FFF;
+}
+
+.top-nav-mobile {
+  display: none;
+  width: 32px;
+  height: 32px;
+  background: url(./hamburger-icon.svg) no-repeat center;
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 10px 20px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .top-nav {
+    z-index: 0;
+  }
+
+  .top-nav-link {
+    display: none;
+  }
+
+  .top-nav-mobile {
+    display: block;
+  }
+}
