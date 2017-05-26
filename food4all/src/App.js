@@ -31,10 +31,11 @@ class App extends Component {
     }));
   }
 
-
+  componentDidMount() {
+    this.fetchData()
+  }
 
   render() {
-    this.fetchData()
     const stores = this.state.storeCards.map((store) => {
       return (
         <StoreCard key={store.id} name={store.name} address={store.address_line1} phone={store.phone} neighborhood={store.neighborhood} />
