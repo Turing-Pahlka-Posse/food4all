@@ -1,4 +1,4 @@
-[
+module.exports = [
 {
 id: 1,
 name: "Dollar Tree",
