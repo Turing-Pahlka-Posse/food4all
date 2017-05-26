@@ -1,0 +1,6 @@
+.map-box {
+  border: 1px dotted blue;
+  height: 500px;
+  margin: 0 0 0 auto;
+  width: 800px;
+}

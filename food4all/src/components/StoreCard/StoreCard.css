@@ -1,5 +1,36 @@
-.name-field {
+.store-card {
+  border: 1px solid #BDBDBD;
+  box-shadow: 0, 2, 4, 0;
   font-family: 'Avenir Next', sans-serif;
+  height: 110px;
+  width: 100%;
+}
+
+.name-field {
   font-weight: 300;
-  color: red;
+}
+
+.name-field,
+.address-field,
+.phone-field,
+.neighborhood-field {
+  display: inline-block;
+  margin: 0;
+  text-align: left;
+  width: 70%;
+}
+
+.info-box {
+  width: 70%;
+}
+
+.map-point {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  top: 25px;
+}
+
+.type-field {
+
 }
