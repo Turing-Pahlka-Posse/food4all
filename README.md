@@ -4,7 +4,7 @@
 
 #### Iteration 0: Map the Food Stores in Denver
   - [x] B.E.: create restful API from [this data](https://www.denvergov.org/opendata/dataset/city-and-county-of-denver-food-stores)
-  - [ ] F.E.: create Map Interface using MapBox and leaflet
+  - [x] F.E.: create Map Interface using google map
 
 #### Iteration 1: Overlay community assets
 
@@ -21,3 +21,5 @@
 `/api/v1/store_types` returns a list of all store types
 
 `/api/v1/stores/find?type=STORE_TYPE` returns all stores matching that store type
+ * store types: ["dollar store", "small grocery store", "convenience store", "convenience store with gas", "specialty food store", "closed specialty food store", "supermarket", "pharmacy", "closed small grocery store", "superette", "closed convenience store", "discount merchandise market", "supercenter", "warehouse club store", "closed supermarket"] ojo: type with spaces in url in browser not sure in fetch calls.
+
