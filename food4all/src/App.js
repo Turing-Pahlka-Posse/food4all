@@ -3,7 +3,11 @@ import React, { Component } from 'react';
 import NavBar from './components/NavBar/NavBar.js';
 import './App.css';
 import { StoreCard } from './components/StoreCard/StoreCard.js'
+
+import  GMap from './components/Map/Map'
+import MapContainer from './components/MapContainer/MapContainer'
 import { Map } from './components/Map/Map'
+
 
 class App extends Component {
   constructor() {
@@ -45,7 +49,12 @@ class App extends Component {
             Filters
           </div>
         </aside>
-        <Map />
+        <MapContainer
+          markers={[{
+            coordinates: {lat: 39.7392358, lng: -104.990251},
+            id: 1495826668321
+
+          }]}/>
         {stores}
       </div>
     );
