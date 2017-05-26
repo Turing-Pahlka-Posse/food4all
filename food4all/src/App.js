@@ -3,33 +3,38 @@ import React, { Component } from 'react';
 import NavBar from './components/NavBar/NavBar.js';
 import './App.css';
 import { StoreCard } from './components/StoreCard/StoreCard.js'
+
 import  GMap from './components/Map/Map'
 import MapContainer from './components/MapContainer/MapContainer'
-import StoreStubs from './stubs/stores-stub'
+import { Map } from './components/Map/Map'
+
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      storeCards: StoreStubs,
+      storeCards: [],
       filter: ''
     }
   }
 
-  // fetchData() {
-  //   return fetch('https://food.caak.network/api/v1/stores/find?type=supermarket', {
-  //     method: 'GET',
-  //     headers: {'Content-Type' : 'json/application'},
-  //     // cors: 'no-cors';
-  //
-  //   })
-  //   .then(response => console.log(response))
-  // }
+  fetchData() {
+    return fetch('http://myfucking.network/api/v1/stores', {
+      method: 'GET',
+      headers: {'Content-Type' : 'json/application'},
+      mode: 'cors'
 
-  // {this.fetchData()}
+    })
+    .then(response => response.json())
+    .then(data => this.setState({
+      storeCards: data
+    }));
+  }
+
 
 
   render() {
+    this.fetchData()
     const stores = this.state.storeCards.map((store) => {
       return (
         <StoreCard key={store.id} name={store.name} address={store.address_line1} phone={store.phone} neighborhood={store.neighborhood} />
