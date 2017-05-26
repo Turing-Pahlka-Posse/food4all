@@ -1,9 +1,6 @@
 import React from 'react'
 import './Map.css'
 
-
-
-
 import { withScriptJs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps'
 
 const GMap = withGoogleMap((props) => {
