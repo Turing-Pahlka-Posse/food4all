@@ -1,13 +1,28 @@
 .store-card {
-  border: 1px solid #BDBDBD;
-  box-shadow: 0, 2, 4, 0;
+  background: #FFFDFD;
+  display: inline-block;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
   font-family: 'Avenir Next', sans-serif;
   height: 110px;
-  width: 100%;
+  position: relative;
+  left: 33%;
+  width: 654px;
 }
 
 .name-field {
-  font-weight: 300;
+  font-family: AvenirNext-Regular;
+  font-size: 27px;
+  color: #323232;
+}
+
+.type-field {
+  font-size: 26px;
+  color: #333333;
+}
+
+.address-field {
+  font-size: 16px;
+  color: #757575;
 }
 
 .name-field,
@@ -21,6 +36,7 @@
 }
 
 .info-box {
+  /*height: 110px;*/
   width: 70%;
 }
 
@@ -34,3 +50,14 @@
 .type-field {
 
 }
+
+
+
+
+
+
+
+/* A: */
+/*font-family: AvenirNext-Bold;
+font-size: 17.92px;
+color: #FFFFFF;*/
