@@ -2,9 +2,11 @@ import React from 'react'
 import './Map.css'
 
 import { withScriptJs, withGoogleMap, HeatmapLayer, GoogleMap, Marker } from 'react-google-maps'
-import { createHeatMap } from '../../ComponentHelper/Map/HeatmapHelper'
+// import { createHeatMap } from '../../ComponentHelper/Map/HeatmapHelper'
 
 const GMap = withGoogleMap((props) => {
+
+
   console.log(props, ' gmap props')
   return (
     <div>
@@ -16,7 +18,7 @@ const GMap = withGoogleMap((props) => {
         {props.markers.map(props.createMarkers)}
       </div>
       <div>
-      
+        
       </div>
     </GoogleMap>
   </div>
