@@ -5,10 +5,10 @@ import GMap from '../Map/Map'
 
 class MapContainer extends Component  {
 
-   createHeatMap (){
-     if(!window.google){
-       return <div>no google</div>
-     }
+ createHeatMap (){
+   if(!window.google){
+     return <div>no google</div>
+   }
     if(window.google) {
       let google = window.google
       var latLngDenver = new google.maps.LatLng(39.7392358, -104.990251)
