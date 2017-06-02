@@ -12,13 +12,13 @@ const GMap = withGoogleMap((props) => {
     <div>
     <GoogleMap
       ref={props.onMapLoad}
-      defaultZoom={5}
+      defaultZoom={10}
       defaultCenter={{ lat: 39.7392358, lng: -104.990251 }}>
       <div>
         {props.markers.map(props.createMarkers)}
       </div>
       <div>
-        
+        {props.createHeat()}
       </div>
     </GoogleMap>
   </div>
